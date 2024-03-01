@@ -10,13 +10,14 @@ public class Andar : MonoBehaviour
     [SerializeField] private Animator animator;
     public float movimentoHorizontal;
     public float movimentoVertical;
-    public float velocidade = 0.0f ;
+    public float velocidade = 10.0f ;
     
 
     void Start()
     {
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
+        velocidade = 5;
     }
 
     // Update is called once per frame
