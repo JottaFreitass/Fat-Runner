@@ -11,6 +11,7 @@ public class Andar : MonoBehaviour
     public float movimentoHorizontal;
     public float movimentoVertical;
     public float velocidade = 10.0f ;
+    public bool podeAndar;
     
 
     void Start()
@@ -18,12 +19,16 @@ public class Andar : MonoBehaviour
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
         velocidade = 5;
+        podeAndar = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movimento();
+        if (podeAndar = true)
+        {
+            Movimento();
+        }
     }
 
     void Movimento()

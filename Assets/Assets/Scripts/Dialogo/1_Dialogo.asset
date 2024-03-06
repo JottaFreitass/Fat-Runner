@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bdb198cd04cad47bd5c4a03cff4dfe, type: 3}
+  m_Name: 1_Dialogo
+  m_EditorClassIdentifier: 
+  dialogos:
+  - Ola senhor, tudo bem?
+  - Opa garotinho... o que fazes por aqui?
+  - Sou novo em Barueri... vim conhecer o parque municipal...
+  - Espero que goste dessa cidade!
+  - Eu acho linda, bem arborizada.
+  - Que bom meu jovem
+  - O que posso fazer no parque?
+  - "Andar de skate, ir nas quadras de volei, futebol, basquete, t\xEAnis ou resolver
+    o minigame do parque..."
+  - Que minigame???? UwU
+  - Foi feito por alguns jovens....
+  - Que interessante!!!!
+  - "Onde come\xE7o?"
+  - Aqui mesmo, na entrada!
+  - Como?
+  - "V\xE1 naquele lugar perto da recep\xE7\xE3o e fa\xE7a o labirinto"
+  - Ok senhor, muito obrigado!
+  quemFala:
+  - Player
+  - Inicial
+  - Player
+  - Inicial
+  - Player
+  - Inicial
+  - Player
+  - Inicial
+  - Player
+  - Inicial
+  - Player
+  - Player
+  - Inicial
+  - Player
+  - Inicial
+  - Player
+  qualExpressao: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
