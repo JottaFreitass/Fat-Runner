@@ -32,19 +32,19 @@ MonoBehaviour:
   - Ok senhor, muito obrigado!
   quemFala:
   - Player
-  - Inicial
+  - NPC
   - Player
-  - Inicial
+  - NPC
   - Player
-  - Inicial
+  - NPC
   - Player
-  - Inicial
+  - NPC
   - Player
-  - Inicial
+  - NPC
   - Player
   - Player
-  - Inicial
+  - NPC
   - Player
-  - Inicial
+  - NPC
   - Player
-  qualExpressao: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  qualExpressao: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 72f1b485cce537648b0f104385e36340
+  - enabled: 1
+    path: Assets/Scenes/Crush.unity
+    guid: 24eccbca130ebe040a3cfd65af0be429
   m_configObjects: {}
