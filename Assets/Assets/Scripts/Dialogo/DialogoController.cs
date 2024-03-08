@@ -27,13 +27,6 @@ public class DialogoController : MonoBehaviour
 
     public bool aindaFalando = false;
 
-    /*
-    0 = Neutro
-    1 = Duvida
-    2 = Puta    
-    3 = Chorando
-    4 = Chocada
-     */
 
     private void Awake()
     {
