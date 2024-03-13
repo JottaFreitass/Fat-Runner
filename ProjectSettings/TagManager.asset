@@ -41,7 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BG
+  - name: Cenario
+    uniqueID: 2970485157
+    locked: 0
+  - name: NPCS
     uniqueID: 706731099
     locked: 0
   - name: Player
