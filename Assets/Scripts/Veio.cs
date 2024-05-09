@@ -6,7 +6,7 @@ using UnityEngine;
 public class Veio : MonoBehaviour
 {
     public Transform posA, posB , posC, posD;
-     public int speed;
+     public int speed = 2;
     Vector2 posPlat;
     private string chegou;
     
