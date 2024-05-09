@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogo_Simples : MonoBehaviour
+public class Dialogo_Simples1 : MonoBehaviour
 {
     [SerializeField] Dialogo[] TodosDialogos;
 
@@ -17,18 +17,23 @@ public class Dialogo_Simples : MonoBehaviour
     [SerializeField] int qualFala;
 
     [SerializeField] GameObject Player;
+    public GameObject Balao_Velho;
+    public GameObject Balao_Velho2;
 
-    
+    public GameObject Painel;
 
     private void Awake()
     {
         qualFala = 0;
         Player = GameObject.FindWithTag("Player");
+        Balao_Velho = GameObject.FindWithTag("BALAO");
+        Balao_Velho2 = GameObject.FindWithTag("BALAO2");
+        Painel = GameObject.Find("Painel");
     }
 
     private void Start()
     {
-
+        Balao_Velho2.SetActive(false);
     }
 
     private void LateUpdate()
@@ -65,7 +70,16 @@ public class Dialogo_Simples : MonoBehaviour
         {
             qualFala = TodosDialogos.Length - 1;
         }
-
+        if(dialogo.aindaFalando == true)
+        {
+            Balao_Velho2.SetActive(true);
+            Balao_Velho.SetActive(false);
+        }
+        else if (dialogo.aindaFalando == false)
+        {
+            Balao_Velho.SetActive(true);
+            Balao_Velho2.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
