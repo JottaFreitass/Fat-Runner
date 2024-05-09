@@ -18,6 +18,8 @@ public class Dialogo_Simples : MonoBehaviour
 
     [SerializeField] GameObject Player;
 
+    
+
     private void Awake()
     {
         qualFala = 0;
@@ -77,6 +79,7 @@ public class Dialogo_Simples : MonoBehaviour
             StopAllCoroutines();
         }
 
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
