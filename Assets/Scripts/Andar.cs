@@ -12,6 +12,8 @@ public class Andar : MonoBehaviour
     public float movimentoVertical;
     public float velocidade = 10.0f ;
     public bool podeAndar;
+
+    public GameObject inventario;
     
 
     void Start()
@@ -28,6 +30,12 @@ public class Andar : MonoBehaviour
         if (podeAndar == true)
         {
             Movimento();
+        }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            bool isActive = !inventario.activeSelf;
+            inventario.SetActive(isActive);
+            podeAndar = !inventario.activeSelf;
         }
     }
 
@@ -82,4 +90,6 @@ public class Andar : MonoBehaviour
 
     }
 
+
+    
 }

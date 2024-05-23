@@ -38,9 +38,9 @@ public class Dialogo_Simples1 : MonoBehaviour
 
     private void LateUpdate()
     {
-
         if (Input.GetKeyDown(KeyCode.Space) && emDialogo == true)
         {
+            StartCoroutine(Andar());
             Player.GetComponent<Andar>().podeAndar = false;
             if (dialogo.aindaFalando == false)
             {
@@ -121,5 +121,11 @@ public class Dialogo_Simples1 : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
+    }
+
+    IEnumerator Andar()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Player.GetComponent<Andar>().podeAndar = true;
     }
 }

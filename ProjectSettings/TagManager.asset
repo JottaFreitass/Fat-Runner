@@ -7,6 +7,7 @@ TagManager:
   - Velho
   - BALAO
   - BALAO2
+  - Inventario
   layers:
   - Default
   - TransparentFX
@@ -47,9 +48,9 @@ TagManager:
   - name: Cenario
     uniqueID: 2970485157
     locked: 0
-  - name: NPCS
-    uniqueID: 706731099
-    locked: 0
   - name: Player
     uniqueID: 1767110349
+    locked: 0
+  - name: NPCS
+    uniqueID: 706731099
     locked: 0
