@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c90af1c31fcf9804f9c8ca062eb12357
+guid: 2d95e03b03bf7e84e8b5228ca171be3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,15 +162,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cima_0
+      name: Lados_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 170
+        width: 140
         height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -184,22 +184,22 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae5a3eae2b71e241b18b675d44bc88e
-      internalID: 1736704406
+      spriteID: 8275d9635bb37ad498c354ec13b9dcae
+      internalID: 38104417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cima_1
+      name: Lados_1
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 139
+        width: 120
         height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -213,22 +213,22 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1434f8327b4644590cf61e2c6361da
-      internalID: 1620522312
+      spriteID: e5f9141de0d8f9d47bb0a1d3d22bf7b8
+      internalID: -1844476738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cima_2
+      name: Lados_2
       rect:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 170
-        height: 290
+        width: 160
+        height: 280
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -242,22 +242,22 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: ba6160f70a15a5346b2cc2a569a3c34c
-      internalID: 1792360679
+      spriteID: ef4ca69940fabb34bbe5576e21f0d45e
+      internalID: -2127198625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cima_3
+      name: Lados_3
       rect:
         serializedVersion: 2
         x: 960
         y: 0
-        width: 139
+        width: 140
         height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -271,22 +271,22 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 3b75337a111171246a9b5d21e7ac1ad9
-      internalID: 2086959158
+      spriteID: b80670f8149e2bb458a5151fc024ca13
+      internalID: -1056142885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cima_4
+      name: Lados_4
       rect:
         serializedVersion: 2
         x: 1280
         y: 0
-        width: 169
+        width: 130
         height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -300,22 +300,22 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 256448cb2d0b5ac41bc7210b50b7aa21
-      internalID: 1596005264
+      spriteID: ac70da7bde229b041aca0e78800e6dfe
+      internalID: 2018605522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cima_5
+      name: Lados_5
       rect:
         serializedVersion: 2
         x: 1600
         y: 0
-        width: 170
-        height: 290
+        width: 190
+        height: 280
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -160}
@@ -329,8 +329,8 @@ TextureImporter:
         - {x: -160, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: b8469bb85c7d41848892340e60da3696
-      internalID: 1000534212
+      spriteID: a0f363a6faff9214ab2ee764e032b9a6
+      internalID: 936156505
       vertices: []
       indices: 
       edges: []
@@ -346,12 +346,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cima_0: 1736704406
-      Cima_1: 1620522312
-      Cima_2: 1792360679
-      Cima_3: 2086959158
-      Cima_4: 1596005264
-      Cima_5: 1000534212
+      Lados_0: 38104417
+      Lados_1: -1844476738
+      Lados_2: -2127198625
+      Lados_3: -1056142885
+      Lados_4: 2018605522
+      Lados_5: 936156505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

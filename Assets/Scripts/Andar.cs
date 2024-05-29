@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Andar : MonoBehaviour
 {
-    public Rigidbody2D rig;
+    Rigidbody2D rig;
     public float speed = 3;
     [SerializeField] private Animator animator;
     public float movimentoHorizontal;
@@ -14,12 +14,15 @@ public class Andar : MonoBehaviour
     public bool podeAndar;
 
     public GameObject inventario;
+
+    SpriteRenderer SR;
     
 
     void Start()
     {
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
+        SR = GetComponent<SpriteRenderer>();
         velocidade = 5;
         podeAndar = true;
     }
@@ -51,41 +54,42 @@ public class Andar : MonoBehaviour
              transform.Translate(Vector3.up*Time.deltaTime*velocidade*movimentoVertical);
 
 
-
-
-
-        if (movimentoHorizontal < 0)
+        if (Input.GetAxis("Horizontal") < 0)
         {
-            animator.SetBool("esquerda", true);
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            animator.SetBool("Lados", true);
         }
         else
         {
-            animator.SetBool("esquerda", false);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Lados", false);
         }
-        if (movimentoHorizontal > 0)
+        if (Input.GetAxis("Horizontal") > 0)
         {
-            animator.SetBool("direita", true);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Lados", true);
         }
         else
         {
-            animator.SetBool("direita", false);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Lados", false);
         }
 
         if (movimentoVertical < 0)
         {
-            animator.SetBool("baixo", true);
+            animator.SetBool("Baixo", true);
         }
         else
         {
-            animator.SetBool("baixo", false);
+            animator.SetBool("Baixo", false);
         }
         if (movimentoVertical > 0)
         {
-            animator.SetBool("cima", true);
+            animator.SetBool("Cima", true);
         }
         else
         {
-            animator.SetBool("cima", false);
+            animator.SetBool("Cima", false);
         }
 
     }

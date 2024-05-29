@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -160,7 +160,181 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Baixo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c4adcae1894a74fb3bea696369ad9a
+      internalID: 1165124823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baixo_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 150
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f73f0da2fe8394cb2949bdadbcd711
+      internalID: -542993448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baixo_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 150
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed856af44f05cc49a0264cabe612f42
+      internalID: -1939099007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baixo_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 140
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329760604fb6d994eb1e4bdfe0bfe159
+      internalID: 1225074843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baixo_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 150
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9b8d7bcf945f74ea0e95a21a8a5bbd
+      internalID: -406184709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baixo_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 150
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20de153d98ae47d4589fe090d1e184bc
+      internalID: -1694144809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -171,7 +345,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Baixo_0: 1165124823
+      Baixo_1: -542993448
+      Baixo_2: -1939099007
+      Baixo_3: 1225074843
+      Baixo_4: -406184709
+      Baixo_5: -1694144809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
