@@ -160,7 +160,36 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Idle 1_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10
+        width: 140
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      physicsShape:
+      - - {x: 0, y: -160}
+        - {x: 160, y: 0}
+        - {x: 0, y: 160}
+        - {x: -160, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b7133d629ef3b4dbff9121c26f7a30
+      internalID: 1747043818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -171,7 +200,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle 1_0: 1747043818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

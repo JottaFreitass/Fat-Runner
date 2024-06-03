@@ -12,6 +12,8 @@ public class Andar : MonoBehaviour
     public float movimentoVertical;
     public float velocidade = 10.0f ;
     public bool podeAndar;
+    [SerializeField]
+    public SpriteRenderer vira;
 
     public GameObject inventario;
 
@@ -56,40 +58,45 @@ public class Andar : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") < 0)
         {
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        
+            vira.flipX=true;
+            animator.SetBool("Idle",false);
             animator.SetBool("Lados", true);
+            
         }
-        else
+        else if(Input.GetAxis("Horizontal") > 0)
         {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Lados", false);
-        }
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            vira.flipX=false;
             animator.SetBool("Lados", true);
-        }
-        else
+        }else
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Lados", false);
+            animator.SetBool("Lados",false);
         }
+        
 
         if (movimentoVertical < 0)
         {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Baixo", true);
+
         }
         else
         {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Baixo", false);
         }
         if (movimentoVertical > 0)
         {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Cima", true);
+            animator.SetBool("Idle", false);
         }
         else
         {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Cima", false);
+            animator.SetBool("Idle", true);
         }
 
     }

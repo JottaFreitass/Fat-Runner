@@ -2685,6 +2685,7 @@ MonoBehaviour:
   movimentoVertical: 0
   velocidade: 10
   podeAndar: 0
+  vira: {fileID: 948999235}
   inventario: {fileID: 112741667}
 --- !u!50 &948999233
 Rigidbody2D:
@@ -2798,7 +2799,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1767110349
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1165124823, guid: 1c253519aa6c85b4ebb4543dbcbaba95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
