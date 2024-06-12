@@ -9,4 +9,6 @@ public class Item
     public int iAttack;
     public Sprite sprite;
     public Transform prefab;
+
+    public Rigidbody2D rig;
 }
