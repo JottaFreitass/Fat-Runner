@@ -7,8 +7,7 @@ public class Item
 {
     public string id;
     public int iAttack;
-    public Sprite sprite;
     public Transform prefab;
-
+    public Sprite sprite;
     public Rigidbody2D rig;
 }

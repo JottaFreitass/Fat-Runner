@@ -7,14 +7,9 @@ public class Inventory : MonoBehaviour
 {
     public GameObject mouseItem;
     public Item[] item;
-    
     public Camera mainCamera;
-    [SerializeField]
-    //public Rigidbody2D Rigidbody_item;
+    public Sprite emptySprite; // Sprite vazio ou transparente
    
-   
-
-    
     public void DragItem(GameObject button)
     {
         mouseItem = button;
@@ -31,9 +26,7 @@ public class Inventory : MonoBehaviour
                 Vector3 mousePosition = Input.mousePosition;
                 mousePosition.z = 10.0f;
                 Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
-               
                 Instantiate(item[pos].prefab, worldPosition, Quaternion.identity);
-                //caindo(Rigidbody_item);
             }
             else
             {
@@ -43,16 +36,4 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
-    /*public void caindo(Rigidbody2D rig)
-    {
-        StartCoroutine(CaindoCouroutine(rig));
-    } 
-
-
-    IEnumerator CaindoCouroutine(Rigidbody2D rig)
-    {
-        yield return new WaitForSeconds(0.5f);
-        rig.bodyType = RigidbodyType2D.Kinematic;
-    }*/
 }
