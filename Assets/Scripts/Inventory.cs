@@ -12,8 +12,12 @@ public class Inventory : MonoBehaviour
 
     public void DragItem(GameObject button)
     {
-        mouseItem = button;
-        mouseItem.transform.position = Input.mousePosition;
+        Image imageComponent = button.GetComponent<Image>();
+        if (imageComponent != null && imageComponent.color.a > 0f)
+        {
+            mouseItem = button;
+            mouseItem.transform.position = Input.mousePosition;
+        }
     }
  
     public void DropItem(GameObject button)
@@ -29,7 +33,7 @@ public class Inventory : MonoBehaviour
                 mousePosition.z = 10.0f;
                 Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
                 Instantiate(item[pos].prefab, worldPosition, Quaternion.identity);
-                imageComponent.raycastTarget = false;
+                //imageComponent.raycastTarget = false;
                 desaparecer();
             }
             else

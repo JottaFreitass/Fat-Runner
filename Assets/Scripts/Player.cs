@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Andar : MonoBehaviour
 {
     Rigidbody2D rig;
     public float speed = 3;
