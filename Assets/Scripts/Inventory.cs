@@ -33,7 +33,6 @@ public class Inventory : MonoBehaviour
                 mousePosition.z = 10.0f;
                 Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
                 Instantiate(item[pos].prefab, worldPosition, Quaternion.identity);
-                //imageComponent.raycastTarget = false;
                 desaparecer();
             }
             else
