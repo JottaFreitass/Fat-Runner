@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Item 
 {
-    public string name;
+    public string id;
     public int iAttack;
     public Transform prefab;
     public Sprite sprite;
     public Rigidbody2D rig;
-    public GameObject imagem;
+    public GameObject itemImage;
 }

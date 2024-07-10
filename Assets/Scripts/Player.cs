@@ -14,79 +14,63 @@ public class Andar : MonoBehaviour
     public bool podeAndar;
     [SerializeField]
     public SpriteRenderer vira;
-    public Inventory inventory;
     public GameObject inventario;
-    public Item[] item;
+    private Inventory inventoryScript;
     SpriteRenderer SR;
-    public GameObject collisedObject;
     
-
     void Start()
     {
-
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
         SR = GetComponent<SpriteRenderer>();
         velocidade = 5;
         podeAndar = true;
-    
+        inventoryScript = inventario.GetComponent<Inventory>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (podeAndar == true)
         {
-
             Movimento();
-        
         }
-        
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-
             bool isActive = !inventario.activeSelf;
             inventario.SetActive(isActive);
             podeAndar = !inventario.activeSelf;
-        
         }
     }
 
     void Movimento()
     {
-
         movimentoHorizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right*Time.deltaTime*velocidade*movimentoHorizontal);
+        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
             
         movimentoVertical = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up*Time.deltaTime*velocidade*movimentoVertical);
-
+        transform.Translate(Vector3.up * Time.deltaTime * velocidade * movimentoVertical);
 
         if (Input.GetAxis("Horizontal") < 0)
         {
-            vira.flipX=true;
-            animator.SetBool("Idle",false);
+            vira.flipX = true;
+            animator.SetBool("Idle", false);
             animator.SetBool("Lados", true);
-            
         }
-        else if(Input.GetAxis("Horizontal") > 0)
+        else if (Input.GetAxis("Horizontal") > 0)
         {
-            vira.flipX=false;
+            vira.flipX = false;
             animator.SetBool("Lados", true);
-
         }
         else
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Lados",false);
+            animator.SetBool("Lados", false);
         }
-        
 
         if (movimentoVertical < 0)
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Baixo", true);
-
         }
         else
         {
@@ -101,41 +85,93 @@ public class Andar : MonoBehaviour
         }
         else
         {
-            
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Cima", false);
             animator.SetBool("Idle", true);
-
-        }
-
-    }
-     private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        Item collidedItem = GetItemFromList(collision.gameObject.name);
-
-        if (collidedItem != null)
-        {
-            bool isActive = !inventario.activeSelf;
-            inventario.SetActive(isActive);
-            podeAndar = !inventario.activeSelf;   
-            collisedObject = collidedItem.imagem;
-            inventory.mouseItem = collisedObject;
-            Debug.Log("Item encontrado: " + collidedItem.name);
         }
     }
 
-    private Item GetItemFromList(string itemName)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        foreach (Item i in item)
+        if (other.gameObject.CompareTag("0"))
         {
-            if (i.name == itemName)
-            {
-                return i;
-            }
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[0].itemImage;    
+            inventoryScript.aparecer();
         }
-        return null;
+        else if (other.gameObject.CompareTag("1"))
+        {
+           Destroy(other.gameObject);
+           inventario.SetActive(true);
+           podeAndar = false;
+           inventoryScript.mouseItem = inventoryScript.item[1].itemImage;
+           inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("2"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[2].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("3"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[3].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("4"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[4].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("5"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[5].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("6"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[6].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("7"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[7].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("8"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[8].itemImage;
+            inventoryScript.aparecer();
+        }
+        else if (other.gameObject.CompareTag("9"))
+        {
+            Destroy(other.gameObject);
+            inventario.SetActive(true);
+            podeAndar = false;
+            inventoryScript.mouseItem = inventoryScript.item[9].itemImage;
+            inventoryScript.aparecer();
+        }
     }
 }
-
-
