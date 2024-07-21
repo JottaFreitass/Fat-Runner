@@ -10,11 +10,15 @@ public class Andar : MonoBehaviour
     [SerializeField] private Animator animator;
     public float movimentoHorizontal;
     public float movimentoVertical;
-    public float velocidade = 10.0f ;
+    public float velocidade = 5.0f ;
     public bool podeAndar;
+    public bool isHUDActive;
+    bool isActive;
+
     [SerializeField]
     public SpriteRenderer vira;
     public GameObject inventario;
+    public GameObject HUD;
     private Inventory inventoryScript;
     SpriteRenderer SR;
     
@@ -26,6 +30,8 @@ public class Andar : MonoBehaviour
         velocidade = 5;
         podeAndar = true;
         inventoryScript = inventario.GetComponent<Inventory>();
+
+        isHUDActive = true;
     }
 
     void Update()
@@ -34,11 +40,27 @@ public class Andar : MonoBehaviour
         {
             Movimento();
         }
+
+        //Inventário
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            bool isActive = !inventario.activeSelf;
+            if (isHUDActive)
+            {
+                HUD.SetActive(false);
+                isHUDActive = false;
+            }
+
+            isActive = !inventario.activeSelf;
             inventario.SetActive(isActive);
+
             podeAndar = !inventario.activeSelf;
+        }
+
+        //HUD
+        if (Input.GetKeyDown(KeyCode.Z) && podeAndar)
+        {
+            HUD.SetActive(!isHUDActive);
+            isHUDActive = !isHUDActive; 
         }
     }
 

@@ -18,6 +18,8 @@ TagManager:
   - 7
   - 8
   - 9
+  - TROCA
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -63,4 +65,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1767110349
+    locked: 0
+  - name: HUD
+    uniqueID: 1252538201
     locked: 0

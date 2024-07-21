@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 72f1b485cce537648b0f104385e36340
   - enabled: 1
-    path: Assets/Scenes/Crush.unity
-    guid: 24eccbca130ebe040a3cfd65af0be429
+    path: Assets/Scenes/Lab.unity
+    guid: fc88856097434194ea136eb549b95c9d
+  - enabled: 1
+    path: Assets/Scenes/Separador.unity
+    guid: f958b62084707e94185304d790acf194
+  - enabled: 1
+    path: Assets/Scenes/Luta.unity
+    guid: d929efaf09628aa4d8d0bac3717c4676
   m_configObjects: {}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86d874e8d2c66064eac9d47c88f5f118
+guid: badc966a86377a449b7e3b453803c777
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,69 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Plant_0
+      name: Keyboard Extras_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 295
-        width: 22
-        height: 19
+        x: 4
+        y: 114
+        width: 24
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +124,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f23f3182ce29784a9653272f28e0b6a
-      internalID: 1948589954
+      spriteID: 7c8d0e4a62921744ca81b6cdaf9d9c8c
+      internalID: -797366453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_1
+      name: Keyboard Extras_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 114
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf371ef9147680047ad618d43051c382
+      internalID: -1106815051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 114
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef37d16eb4cc2c4287ce06ece3698dd
+      internalID: 339313684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_3
       rect:
         serializedVersion: 2
         x: 98
-        y: 292
-        width: 27
-        height: 25
+        y: 114
+        width: 28
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c05e9539e52cfb40b2aed3619d37b99
-      internalID: -496918364
+      spriteID: 670e6c3746736fb47acc512cd8a10d17
+      internalID: 1924086524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_2
+      name: Keyboard Extras_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 359
-        width: 113
-        height: 139
+        x: 2
+        y: 98
+        width: 28
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,470 +208,575 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f7d2edc03e1b194bafc40d72546a88d
-      internalID: 1103270251
+      spriteID: a9a6278e803bef5409851472fbc6143e
+      internalID: -1699464667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_39
+      name: Keyboard Extras_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 359
-        width: 95
-        height: 136
+        x: 38
+        y: 98
+        width: 20
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebddcbbac76bfc34eafc9bc62bc2dd8e
-      internalID: 1269876542
+      spriteID: d07ec815ca16a3648a3a691a9bfa2ca6
+      internalID: 961702892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_40
+      name: Keyboard Extras_6
       rect:
         serializedVersion: 2
-        x: 295
-        y: 361
-        width: 79
-        height: 120
+        x: 70
+        y: 98
+        width: 20
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d71d935899fcd34bad23007cf6418db
-      internalID: -1208153132
+      spriteID: 97ea6a72d4bb103419574bb70ea4563f
+      internalID: -191947547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_48
+      name: Keyboard Extras_7
       rect:
         serializedVersion: 2
-        x: 156
-        y: 290
-        width: 38
-        height: 32
+        x: 98
+        y: 98
+        width: 28
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fae4f3c82fd51845b738e1484f64458
-      internalID: -1943365337
+      spriteID: d37f5b62536648c49b654e8778469009
+      internalID: -1238859194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_50
+      name: Keyboard Extras_8
       rect:
         serializedVersion: 2
-        x: 216
-        y: 285
-        width: 47
-        height: 42
+        x: 4
+        y: 82
+        width: 24
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4bc7b0b89f2a349ad06b2c06bfe4c2
-      internalID: 1959907545
+      spriteID: c5c31e8ad47e2634c8b9b367a3718de3
+      internalID: -1176077481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_52
+      name: Keyboard Extras_9
       rect:
         serializedVersion: 2
-        x: 282
-        y: 281
-        width: 38
-        height: 45
+        x: 39
+        y: 82
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075b015d68f659f46942e132b1282e68
-      internalID: 1818271763
+      spriteID: 667089a063e280d4cbc19de427f35002
+      internalID: -825010234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_54
+      name: Keyboard Extras_10
       rect:
         serializedVersion: 2
-        x: 346
-        y: 287
-        width: 40
-        height: 35
+        x: 65
+        y: 82
+        width: 30
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f077254b928ce3f44b3f767cd32a7c1f
-      internalID: 1216126691
+      spriteID: 1ca243355debee34aae6db742413f85c
+      internalID: 1480189608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_59
+      name: Keyboard Extras_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 103
+        y: 82
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5a50e7db99a424ea452d6ab7bae316
-      internalID: -621120359
+      spriteID: 9ce73f1d666585a41a939179abd88253
+      internalID: 1234388516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_60
+      name: Keyboard Extras_12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 7
+        y: 66
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a1fa7d5db0f3664d91a6f7e94f8139a
-      internalID: 1791668213
+      spriteID: e9307fc2f05e1854ebcc8130bbf79dd3
+      internalID: -2036685324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_61
+      name: Keyboard Extras_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 39
+        y: 66
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66dd1a161f2b9e45949c7bb81ec213d
-      internalID: -442089591
+      spriteID: cb308e8bb5b649b40a24c458eaf02e10
+      internalID: 72850785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_62
+      name: Keyboard Extras_14
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
+        x: 71
+        y: 66
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb2ba79ee079b3147b8252d3dfb7146a
-      internalID: -343619788
+      spriteID: 90d6699516b473848be2ad8921259f85
+      internalID: -61825250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_63
+      name: Keyboard Extras_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 98
+        y: 66
+        width: 28
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abfc00f08c3606149baa26c7c878fab9
-      internalID: 1479146307
+      spriteID: 5b28893ccf308f54b9e2a7a6e305a0cd
+      internalID: 1131665780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_64
+      name: Keyboard Extras_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 4
+        y: 50
+        width: 24
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f895b2f1b32136488669c6aeeb33464
-      internalID: 392881756
+      spriteID: 4e127baeacd28244db186045b823a4bc
+      internalID: -1381142220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_65
+      name: Keyboard Extras_17
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 39
+        y: 50
+        width: 18
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54f3f7f895809004d9893f85e70594e3
-      internalID: 1253300575
+      spriteID: e8df7fcc709f6544fb7b94639520dd75
+      internalID: 1957770243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_66
+      name: Keyboard Extras_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 66
+        y: 50
+        width: 28
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536ddfe3bcc79e749813e4930fa97183
-      internalID: 817130383
+      spriteID: c5803d8d95233d4479bbf759f96f14d9
+      internalID: -1871801167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_67
+      name: Keyboard Extras_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 98
+        y: 50
+        width: 28
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0e91695033a5d499e9bc7d1f6728ff
-      internalID: -1967992994
+      spriteID: c7b7c86df79abab40806cc5b4c0b83cc
+      internalID: -2117016593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_68
+      name: Keyboard Extras_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 2
+        y: 34
+        width: 28
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 113b396de59999845a2e051c159da070
-      internalID: -74530741
+      spriteID: cec33f06a377104438db56e990416ab3
+      internalID: -17823072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_69
+      name: Keyboard Extras_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 38
+        y: 34
+        width: 20
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f629298341fa8b4da750ddf9961a414
-      internalID: 1435008811
+      spriteID: 8b851a6262f715343835ab1bdacea6b5
+      internalID: 989859212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_70
+      name: Keyboard Extras_22
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 70
+        y: 34
+        width: 20
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ebdb5ee46edd1428fca56c45ba8c02
-      internalID: 1288627263
+      spriteID: ace6bd9d289b6bb45aa19522ba6f652c
+      internalID: 1280230154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_71
+      name: Keyboard Extras_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 98
+        y: 34
+        width: 28
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faa82d57315f57143b02ac22c5460a78
-      internalID: 898766331
+      spriteID: e5f5dba023cf06143a1d84bcfd175e03
+      internalID: 1446627908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_72
+      name: Keyboard Extras_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 4
+        y: 18
+        width: 24
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72f4fdcedeb18e4d9345321e0dcfa67
-      internalID: 488501647
+      spriteID: 8ea7e21a93901a247a3ffb6571400604
+      internalID: 298443333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_73
+      name: Keyboard Extras_25
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 39
+        y: 18
+        width: 18
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a60be20e83d08924d845fa82a034a177
-      internalID: -1193957607
+      spriteID: 4d26c385e11ca954fb60a8d7bef94095
+      internalID: 649224354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Plant_74
+      name: Keyboard Extras_26
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 65
+        y: 18
+        width: 30
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af460c7654f91e94fa4442466c6bc40b
-      internalID: -178556014
+      spriteID: c38e1e156740e7143aec2522070ef698
+      internalID: 642208941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 18
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae3ca1fcbaa9ac43954894b47b173d1
+      internalID: -256496951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f054db4e9f6d69543ac4515d58567c1f
+      internalID: -1631505512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769160aca0b9ee342a1f97f3efbc9773
+      internalID: 644281901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_30
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6f466838a525544b50092988804825
+      internalID: -1595586395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Extras_31
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dfa1fad03467340bd55780a1c1a431
+      internalID: -1177816371
       vertices: []
       indices: 
       edges: []
@@ -697,81 +792,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Plant_0: 1948589954
-      TX Plant_1: -496918364
-      TX Plant_10: 155047491
-      TX Plant_11: 2075475392
-      TX Plant_12: -1190018186
-      TX Plant_13: -1674899686
-      TX Plant_14: 748449443
-      TX Plant_15: 414370417
-      TX Plant_16: 1937449273
-      TX Plant_17: -2099780817
-      TX Plant_18: 293922486
-      TX Plant_19: -1163707818
-      TX Plant_2: 1103270251
-      TX Plant_20: -980264994
-      TX Plant_21: -918225163
-      TX Plant_22: -10533518
-      TX Plant_23: 203426158
-      TX Plant_24: -1295045777
-      TX Plant_25: -1709618187
-      TX Plant_26: -2018405502
-      TX Plant_27: 1277038394
-      TX Plant_28: 1640661651
-      TX Plant_29: -758747933
-      TX Plant_3: 1899914044
-      TX Plant_30: 1720305188
-      TX Plant_31: 280659775
-      TX Plant_32: -1519758438
-      TX Plant_33: -1451916710
-      TX Plant_34: 959715673
-      TX Plant_35: 1140267101
-      TX Plant_36: 1582046411
-      TX Plant_37: -1659301225
-      TX Plant_38: 1588846792
-      TX Plant_39: 1269876542
-      TX Plant_4: -270629912
-      TX Plant_40: -1208153132
-      TX Plant_41: 558836093
-      TX Plant_42: -257395602
-      TX Plant_43: -1654754502
-      TX Plant_44: 250507088
-      TX Plant_45: -2027830104
-      TX Plant_46: 1504760517
-      TX Plant_47: -962257198
-      TX Plant_48: -1943365337
-      TX Plant_49: 972416632
-      TX Plant_5: 1173225560
-      TX Plant_50: 1959907545
-      TX Plant_51: 1886658515
-      TX Plant_52: 1818271763
-      TX Plant_53: 1238939146
-      TX Plant_54: 1216126691
-      TX Plant_55: 957804563
-      TX Plant_56: -103121028
-      TX Plant_57: -1948984214
-      TX Plant_58: -138425893
-      TX Plant_59: -621120359
-      TX Plant_6: -838592034
-      TX Plant_60: 1791668213
-      TX Plant_61: -442089591
-      TX Plant_62: -343619788
-      TX Plant_63: 1479146307
-      TX Plant_64: 392881756
-      TX Plant_65: 1253300575
-      TX Plant_66: 817130383
-      TX Plant_67: -1967992994
-      TX Plant_68: -74530741
-      TX Plant_69: 1435008811
-      TX Plant_7: -1293683615
-      TX Plant_70: 1288627263
-      TX Plant_71: 898766331
-      TX Plant_72: 488501647
-      TX Plant_73: -1193957607
-      TX Plant_74: -178556014
-      TX Plant_8: -1459279797
-      TX Plant_9: 1097091751
+      Keyboard Extras_0: -797366453
+      Keyboard Extras_1: -1106815051
+      Keyboard Extras_10: 1480189608
+      Keyboard Extras_11: 1234388516
+      Keyboard Extras_12: -2036685324
+      Keyboard Extras_13: 72850785
+      Keyboard Extras_14: -61825250
+      Keyboard Extras_15: 1131665780
+      Keyboard Extras_16: -1381142220
+      Keyboard Extras_17: 1957770243
+      Keyboard Extras_18: -1871801167
+      Keyboard Extras_19: -2117016593
+      Keyboard Extras_2: 339313684
+      Keyboard Extras_20: -17823072
+      Keyboard Extras_21: 989859212
+      Keyboard Extras_22: 1280230154
+      Keyboard Extras_23: 1446627908
+      Keyboard Extras_24: 298443333
+      Keyboard Extras_25: 649224354
+      Keyboard Extras_26: 642208941
+      Keyboard Extras_27: -256496951
+      Keyboard Extras_28: -1631505512
+      Keyboard Extras_29: 644281901
+      Keyboard Extras_3: 1924086524
+      Keyboard Extras_30: -1595586395
+      Keyboard Extras_31: -1177816371
+      Keyboard Extras_4: -1699464667
+      Keyboard Extras_5: 961702892
+      Keyboard Extras_6: -191947547
+      Keyboard Extras_7: -1238859194
+      Keyboard Extras_8: -1176077481
+      Keyboard Extras_9: -825010234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
