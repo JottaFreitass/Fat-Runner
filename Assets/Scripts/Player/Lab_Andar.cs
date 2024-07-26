@@ -10,7 +10,7 @@ public class Lab_Andar : MonoBehaviour
     [SerializeField] private Animator animator;
     public float movimentoHorizontal;
     public float movimentoVertical;
-    public float velocidade = 10.0f ;
+    public int velocidade;
     public bool podeAndar;
     [SerializeField]
     public SpriteRenderer vira;
@@ -23,7 +23,7 @@ public class Lab_Andar : MonoBehaviour
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
         SR = GetComponent<SpriteRenderer>();
-        velocidade = 10;
+        velocidade = 4;
     }
 
     // Update is called once per frame
@@ -34,11 +34,7 @@ public class Lab_Andar : MonoBehaviour
 
     void Movimento()
     {
-        movimentoHorizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
-            
-        movimentoVertical = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * Time.deltaTime * velocidade * movimentoVertical);
+        rig.velocity = new Vector2(Input.GetAxis("Horizontal")* velocidade, Input.GetAxis("Vertical")* velocidade);
 
         if (Input.GetAxis("Horizontal") < 0)
         {
