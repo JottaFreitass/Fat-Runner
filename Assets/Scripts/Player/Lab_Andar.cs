@@ -5,76 +5,85 @@ using UnityEngine.SceneManagement;
 
 public class Lab_Andar : MonoBehaviour
 {
-    Rigidbody2D rig;
-    public float speed = 3;
-    [SerializeField] private Animator animator;
+
+    [Header("Atributs")]
+    public int speed = 3;
     public float movimentoHorizontal;
     public float movimentoVertical;
     public int velocidade;
-    public bool podeAndar;
-    [SerializeField]
+    public bool Iniciou = false;
+
+
+    [Header("Imports")]
     public SpriteRenderer vira;
-    SpriteRenderer SR;
+    public SpriteRenderer SR;
+    public Animator animator;
+    public Rigidbody2D rig;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Comecou o jogo");
+        Debug.Log("Comecou Lab");
         rig = GetComponent<Rigidbody2D>();
         SR = GetComponent<SpriteRenderer>();
-        velocidade = 4;
+        StartCoroutine(Comeco());
+        transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movimento();
+        if (Iniciou)
+        {
+            Movimento();
+        }
     }
 
     void Movimento()
     {
-        rig.velocity = new Vector2(Input.GetAxis("Horizontal")* velocidade, Input.GetAxis("Vertical")* velocidade);
+        movimentoHorizontal = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
+            
+        movimentoVertical = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.up * Time.deltaTime * velocidade * movimentoVertical);
 
-        if (Input.GetAxis("Horizontal") < 0)
+
+        if (Input.GetAxis("Horizontal") && Input.GetAxis("Vertical") = 0)
         {
-            vira.flipX = true;
+            animator.SetBool("Idle", true);
+
+        }
+        else if (Input.GetAxis("Horizontal") < 0)
+        {
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
             animator.SetBool("Idle", false);
             animator.SetBool("Lados", true);
         }
         else if (Input.GetAxis("Horizontal") > 0)
         {
-            vira.flipX = false;
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Lados", true);
         }
-        else
-        {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Lados", false);
-        }
 
-        if (movimentoVertical < 0)
+        else if (movimentoVertical < 0)
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Baixo", true);
         }
-        else
-        {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Baixo", false);
-        }
-        if (movimentoVertical > 0)
+        else if (movimentoVertical > 0)
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Cima", true);
             animator.SetBool("Idle", false);
         }
-        else
-        {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            animator.SetBool("Cima", false);
-            animator.SetBool("Idle", true);
-        } 
+
+    }
+
+    IEnumerator Comeco()
+    {
+        yield return new WaitForSeconds(2);
+        Iniciou = true;
     }
 
      void OnTriggerEnter2D(Collider2D colisao)
