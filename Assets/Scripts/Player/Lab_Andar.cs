@@ -36,50 +36,49 @@ public class Lab_Andar : MonoBehaviour
     void Movimento()
     {
         movimentoHorizontal = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
+
         movimentoVertical = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.up * Time.deltaTime * velocidade * movimentoVertical);
 
-        Vector3 movimento = new Vector3(movimentoHorizontal, movimentoVertical, 0f).normalized;
-        transform.Translate(movimento * Time.deltaTime * velocidade);
-
-        if (movimentoHorizontal == 0 && movimentoVertical == 0)
+        if (Input.GetAxis("Horizontal") < 0)
         {
-            animator.SetBool("Idle", true);
-            animator.SetBool("Lados", false);
-            animator.SetBool("Baixo", false);
-            animator.SetBool("Cima", false);
+            SR.flipX = true;
+            animator.SetBool("Idle", false);
+            animator.SetBool("Lados", true);
+        }
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+           SR.flipX = false;
+            animator.SetBool("Lados", true);
         }
         else
         {
-            animator.SetBool("Idle", false);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Lados", false);
+        }
 
-            if (movimentoHorizontal < 0)
-            {
-                SR.flipX = true;
-                animator.SetBool("Lados", true);
-                animator.SetBool("Baixo", false);
-                animator.SetBool("Cima", false);
-            }
-            else if (movimentoHorizontal > 0)
-            {
-                SR.flipX = false;
-                animator.SetBool("Lados", true);
-                animator.SetBool("Baixo", false);
-                animator.SetBool("Cima", false);
-            }
-            else if (movimentoVertical < 0)
-            {
-                SR.flipX = false;
-                animator.SetBool("Baixo", true);
-                animator.SetBool("Lados", false);
-                animator.SetBool("Cima", false);
-            }
-            else if (movimentoVertical > 0)
-            {
-                SR.flipX = false;
-                animator.SetBool("Cima", true);
-                animator.SetBool("Lados", false);
-                animator.SetBool("Baixo", false);
-            }
+        if (movimentoVertical < 0)
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Baixo", true);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Baixo", false);
+        }
+        if (movimentoVertical > 0)
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Cima", true);
+            animator.SetBool("Idle", false);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("Cima", false);
+            animator.SetBool("Idle", true);
         }
     }
 

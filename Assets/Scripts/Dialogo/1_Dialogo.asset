@@ -22,13 +22,13 @@ MonoBehaviour:
   - O que posso fazer no parque?
   - Andar de skate, ir nas quadras de volei, futebol, basquete, tenis ou resolver
     o minigame do parque...
-  - Que minigame???? UwU
+  - 'Que minigame???? '
   - Foi feito por alguns jovens....
   - Que interessante!!!!
-  - "Onde come\xE7o?"
+  - Onde inicia?
   - Aqui mesmo, na entrada!
   - Como?
-  - "Va naquele lugar perto da recep\xE7\xE3o e fa\xE7a o labirinto"
+  - "Va naquele lugar perto da entrada e fa\xE7a o labirinto"
   - Ok senhor, muito obrigado!
   quemFala:
   - Player
@@ -47,4 +47,4 @@ MonoBehaviour:
   - Player
   - NPC
   - Player
-  qualExpressao: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  qualExpressao: 00000000010000000000000001000000000000000100000000000000010000000000000001000000000000000000000001000000000000000100000000000000

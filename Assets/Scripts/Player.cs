@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class Andar : MonoBehaviour
 {
-    Rigidbody2D rig;
+    [Header("Atributos")]
     public float speed = 3;
-    [SerializeField] private Animator animator;
     public float movimentoHorizontal;
     public float movimentoVertical;
     public float velocidade = 5.0f ;
@@ -15,12 +14,14 @@ public class Andar : MonoBehaviour
     public bool isHUDActive;
     bool isActive;
 
+    [Header("Imports")]
     [SerializeField]
-    public SpriteRenderer vira;
     public GameObject inventario;
     public GameObject HUD;
     private Inventory inventoryScript;
-    SpriteRenderer SR;
+    public SpriteRenderer SR;
+    public Rigidbody2D rig;
+    public Animator animator;
     
     void Start()
     {
@@ -32,6 +33,7 @@ public class Andar : MonoBehaviour
         inventoryScript = inventario.GetComponent<Inventory>();
 
         isHUDActive = true;
+        HUD.SetActive(true);
     }
 
     void Update()
@@ -74,13 +76,13 @@ public class Andar : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") < 0)
         {
-            vira.flipX = true;
+            SR.flipX = true;
             animator.SetBool("Idle", false);
             animator.SetBool("Lados", true);
         }
         else if (Input.GetAxis("Horizontal") > 0)
         {
-            vira.flipX = false;
+           SR.flipX = false;
             animator.SetBool("Lados", true);
         }
         else
