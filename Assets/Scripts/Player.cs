@@ -13,6 +13,7 @@ public class Andar : MonoBehaviour
     public bool podeAndar;
     public bool isHUDActive;
     bool isActive;
+    [SerializeField] int vida;
 
     [Header("Imports")]
     [SerializeField]
