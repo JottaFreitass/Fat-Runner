@@ -11,6 +11,7 @@ public class LutaController : MonoBehaviour
     public string str;
     public Cerebro cerebro; // Use a classe Cerebro
     public Ball bal;
+    public BarraDeVida Barras;
 
     void Start()
     {
@@ -24,6 +25,12 @@ public class LutaController : MonoBehaviour
         if (bal == null)
         {
             Debug.LogError("Ball não encontrado! Verifique se o script Ball está anexado a um GameObject.");
+        }
+
+        Barras = FindObjectOfType<BarraDeVida>();
+        if (Barras == null)
+        {
+            Debug.LogError("Barras não encontrado");
         }
 
         Lutar.onClick.AddListener(OnLutarClicked);

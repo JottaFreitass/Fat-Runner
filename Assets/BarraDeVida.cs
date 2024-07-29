@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BarraDeVida : MonoBehaviour
 {
     public Slider slider;
+    public int RealVida = 10;
     
     public void SetarVidaMax(int vida)
     {
@@ -13,8 +14,8 @@ public class BarraDeVida : MonoBehaviour
         slider.value = vida;
     }
 
-    public void SetarVida(int vida)
+    public void SetarVida()
     {
-        slider.value = vida;
+        slider.value = RealVida;
     }
 }

@@ -20,17 +20,19 @@ public class Cerebro : MonoBehaviour
     private int MinY = -2;
 
     [Header("Imports")]
+    public Animator animator;
     public GameObject InLUTA;
     public GameObject OutLUTA;
     public GameObject Player;
-    public GameObject LifeCanvas;
-
+    public GameObject RealLife;
     public Ball bal;
+    public BarraDeVida Barra;
     
     void Start()
     {
         isLuta = false;
         InLUTA.SetActive(false);
+        RealLife.SetActive(false);
         OutLUTA.SetActive(true);
         SetBrain();
 
@@ -39,6 +41,10 @@ public class Cerebro : MonoBehaviour
         {
             Debug.LogError("Ball não encontrado! Verifique se o script Ball está anexado a um GameObject.");
         }
+
+        Barra = RealLife.GetComponent<BarraDeVida>();
+
+        animator = GetComponent<Animator>();
     }
 
     public void SetBrain()
@@ -59,6 +65,7 @@ public class Cerebro : MonoBehaviour
         else if (noLuta)
         {
             InLUTA.SetActive(false);
+            RealLife.SetActive(false);
             OutLUTA.SetActive(true);
             bal.InLUTA = false;
         }
@@ -82,13 +89,16 @@ public class Cerebro : MonoBehaviour
     public void Luta()
     {
         InLUTA.SetActive(true);
+        RealLife.SetActive(true);
         OutLUTA.SetActive(false);
     }
 
     public void Vida()
     {
-        if (life <= 0)
+        Barra.SetarVida();
+        if (Barra.RealVida <= 0)
         {
+            morte();
             SceneManager.LoadScene("Jogo");
         }
     }
@@ -98,8 +108,14 @@ public class Cerebro : MonoBehaviour
         // Verifique se o objeto com o qual colidiu tem a tag "Ball"
         if (col.CompareTag("Ball"))
         {
-            life -= 1; // Reduza a vida pelo valor de dano
-            Debug.Log("Colidiu com a Ball! Vida restante: " + life);
+            Barra.RealVida -= 1; // Reduza a vida pelo valor de dano
+            Debug.Log("Colidiu com a Ball! Vida restante: " + Barra.RealVida);
         }
+    }
+
+    IEnumerator morte()
+    {
+        animator.Play("morte");
+        yield return new WaitForSeconds(1);
     }
 }
