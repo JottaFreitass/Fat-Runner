@@ -7,12 +7,14 @@ public class Ball : MonoBehaviour
     [Header("Imports")]
     public SpriteRenderer sprt;
     public GameObject ball1;
-    private Animator animator;
-    
-
+    [SerializeField]
+    Animator animator;
     private int Lado;
-
     public bool InLUTA;
+    private int TempoMaxLuta = 120;
+
+    private int tempoLuta = 0;
+    public bool isChangingAttack = false;
 
     void Start()
     {
@@ -27,7 +29,10 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-
+        if (InLUTA && tempoLuta < TempoMaxLuta && !isChangingAttack)
+        {
+            StartCoroutine(MudarAtaque());
+        }
     }
 
     public void SpawnBall()
@@ -56,5 +61,36 @@ public class Ball : MonoBehaviour
             transform.position = new Vector3(Random.Range(-2, 2), -8, 0f);
             Debug.Log("Baixo");
         }
+    }
+
+    IEnumerator MudarAtaque()
+    {
+        isChangingAttack = true;
+        if (InLUTA)
+        {  
+            animator.SetBool("atk2", true);
+            if (tempoLuta >= TempoMaxLuta)
+            {
+                yield break;
+            }
+            while (tempoLuta < TempoMaxLuta)
+            {
+                if (animator.GetBool("atk1"))
+                {
+                    yield return new WaitForSeconds(9.0f);
+                    animator.SetBool("atk1", false);
+                    animator.SetBool("atk2", true);
+                    tempoLuta += 10;
+                } 
+                else if (animator.GetBool("atk2"))
+                {
+                    yield return new WaitForSeconds(7.8f);
+                    animator.SetBool("atk2", false);
+                    animator.SetBool("atk1", true);
+                    tempoLuta += 10;
+                }            
+            }
+        }
+        isChangingAttack = false;
     }
 }
