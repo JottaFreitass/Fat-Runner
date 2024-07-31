@@ -5,9 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Botao : MonoBehaviour
-{ 
-    [SerializeField] private Button BotaoJogar;
+{  
+    [SerializeField]
+    Andar PlayerScript;
+    [SerializeField]
+    public GameObject player;
+    
+    [SerializeField]
+    private Button BotaoJogar;
 
+    public bool andar_cima;
     GameObject MenuGameUI;
 
     private void Awake()
@@ -24,5 +31,15 @@ public class Botao : MonoBehaviour
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void MovimentoBotaoCima()
+    {
+        andar_cima = true;
+    }
+
+    public void pararMovimento()
+    {
+        andar_cima = false;
     }
 }

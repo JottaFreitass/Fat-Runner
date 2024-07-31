@@ -13,7 +13,10 @@ public class Andar : MonoBehaviour
     public bool podeAndar;
     public bool isHUDActive;
     bool isActive;
-    [SerializeField] int vida;
+    [SerializeField]
+    public Botao botao;
+    [SerializeField] 
+    int vida;
 
     [Header("Imports")]
     [SerializeField]
@@ -71,9 +74,17 @@ public class Andar : MonoBehaviour
     {
         movimentoHorizontal = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
-            
+    
         movimentoVertical = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * Time.deltaTime * velocidade * movimentoVertical);
+
+        if(botao.andar_cima == true)
+        {
+            Debug.Log("andando_cima");
+            transform.Translate(Vector3.up * velocidade * Time.deltaTime);
+            animator.SetBool("Cima", true);
+            animator.SetBool("Idle", false);
+        }
 
         if (Input.GetAxis("Horizontal") < 0)
         {
@@ -104,9 +115,12 @@ public class Andar : MonoBehaviour
         }
         if (movimentoVertical > 0)
         {
+            
+            Debug.Log("andando_cima");
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
             animator.SetBool("Cima", true);
             animator.SetBool("Idle", false);
+            
         }
         else
         {
