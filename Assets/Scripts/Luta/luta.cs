@@ -19,11 +19,11 @@ public class luta : MonoBehaviour
 
     private void Update()
     {
-        if (player != null && Vector2.Distance(player.transform.position, transform.position) < 2)
+        if (player != null && Vector2.Distance(player.transform.position, transform.position) < 0.5)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Missão Iniciada!");
+                Debug.Log("Missão Iniciada: " + str);
                 SceneManager.LoadScene(str);
             }
         }
