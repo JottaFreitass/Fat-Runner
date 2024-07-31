@@ -29,7 +29,7 @@ public class Andar : MonoBehaviour
         Debug.Log("Comecou o jogo");
         rig = GetComponent<Rigidbody2D>();
         SR = GetComponent<SpriteRenderer>();
-        velocidade = 5;
+        velocidade = 1.5f;
         podeAndar = true;
         inventoryScript = inventario.GetComponent<Inventory>();
 
